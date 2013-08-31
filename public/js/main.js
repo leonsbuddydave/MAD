@@ -42,6 +42,9 @@
 	}());
 
 
+	/*
+		Controller class for the input box
+	*/
 	var InputBox = (function() {
 
 		/* PRIVATE */
@@ -53,7 +56,15 @@
 		}
 
 		var onKeyUp = function(e) {
-			console.log("Key up!");
+			if (e.keyCode === 13) {
+				console.log("Enter pressed!");
+			} else {
+				console.log("Key up!");				
+			}
+		}
+
+		var NewMessage = function() {
+			
 		}
 
 		/* PUBLIC */
@@ -63,8 +74,6 @@
 
 			bindEvents();
 		}
-
-
 
 		return {
 			setInput : setInput
