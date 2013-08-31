@@ -1,7 +1,7 @@
 {
     "name": "MAD",
     "version": "0.0.0",
-    "description": "MAD",
+    "description": "Multi-Angry Dungeon",
     "dependencies": {
         "socket.io": "latest",
         "express": "latest"
